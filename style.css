@@ -34,24 +34,7 @@ a:hover {
     grid-template-columns: 1fr;
     justify-items: center;
     margin-bottom: 20px;
-    /* grid-template-rows: 26px 200px; */
 }
-
-/* h1 declaration commented out below were used for logo area in previous version */
-
-/* h1 {
-    letter-spacing: 15px;
-}
-
-h1::before {
-    content: url(https://picsum.photos/26/26);
-    margin-right: 20px;
-}
-
-h1::after {
-    content: url(https://picsum.photos/26/26);
-    margin-left: 10px;
-} */
 
 .search {
     display: grid;
