@@ -1,0 +1,114 @@
+:root {
+    --black: rgba(49, 49, 49, 0.9);
+    --yellow: rgb(223, 220, 55);
+    --lightgrey: rgba(173, 172, 172, 0.2);
+}
+
+a:link,
+a:visited {
+    color: var(--black);
+    text-decoration: none;
+    font-size: .9em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 50px) 1fr repeat(4, 50px);
+    margin: 20px;
+    margin-top: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+    /* grid-template-rows: 26px 200px; */
+}
+
+/* h1 declaration commented out below were used for logo area in previous version */
+
+/* h1 {
+    letter-spacing: 15px;
+}
+
+h1::before {
+    content: url(https://picsum.photos/26/26);
+    margin-right: 20px;
+}
+
+h1::after {
+    content: url(https://picsum.photos/26/26);
+    margin-left: 10px;
+} */
+
+.search {
+    display: grid;
+    max-width: 50%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 40px;
+    grid-gap: 30px 20px;
+    margin: 0 auto;
+    justify-items: center;
+    grid-template-areas:
+        "search-bar search-bar search-bar search-bar"
+        ". search-button feeling-lucky .";
+}
+
+.search-bar {
+    grid-area: search-bar;
+    border-radius: 25px;
+    border-color: rgba(90, 90, 90, 0.1);
+    width: 600px;
+}
+
+.search-button {
+    grid-area: search-button;
+}
+
+.feeling-lucky {
+    grid-area: feeling-lucky;
+}
+
+input[type="text"] {
+    padding: 25px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    border-radius: 4px;
+    border-color: transparent;
+    min-width: 150px;
+    font-weight: bold;
+    font-size: .75em;
+    color: rgba(70, 70, 70, .8);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, auto) 1fr repeat(3, auto);
+    margin: 0px;
+    justify-items: center;
+    align-items: center;
+    background: var(--lightgrey);
+    padding: 10px;
+}
